@@ -1,0 +1,15 @@
+{
+  "name": "Chowdhury Muhtadee Maheer",
+  "short_name": "Muhtadee Maheer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f9fb",
+  "theme_color": "#0c3551",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
