@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Profiles | Chowdhury Muhtadee Maheer</title>
+
   <meta name="description" content="Public academic, professional, bibliographic, social and creative profiles for Chowdhury Muhtadee Maheer.">
   <meta name="author" content="Chowdhury Muhtadee Maheer">
   <meta name="robots" content="index, follow, max-image-preview:large">
 
   <link rel="canonical" href="https://chowdhurymuhtadeemaheer.github.io/profiles.html">
+
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
 
@@ -53,6 +56,104 @@
     @media (max-width: 720px) {
       .site-footer {
         padding-bottom: 122px;
+      }
+    }
+
+    .profile-grid {
+      align-items: stretch;
+    }
+
+    .profile-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .profile-link:hover {
+      transform: translateY(-2px);
+    }
+
+    .profile-link-content {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .profile-icon {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(12, 53, 81, 0.07);
+      color: var(--blue-deep);
+      border: 1px solid rgba(12, 53, 81, 0.10);
+    }
+
+    .profile-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      display: block;
+    }
+
+    .profile-copy {
+      min-width: 0;
+    }
+
+    .profile-copy strong {
+      display: inline-block;
+      margin-bottom: 2px;
+    }
+
+    .profile-copy small {
+      display: block;
+      line-height: 1.35;
+    }
+
+    .profile-arrow {
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(12, 53, 81, 0.12);
+      color: var(--blue-deep);
+      font-size: 15px;
+      line-height: 1;
+      transition:
+        transform 180ms ease,
+        background-color 180ms ease;
+    }
+
+    .profile-link:hover .profile-arrow {
+      transform: translate(2px, -2px);
+      background: rgba(12, 53, 81, 0.06);
+    }
+
+    @media (max-width: 640px) {
+      .profile-icon {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        border-radius: 10px;
+      }
+
+      .profile-arrow {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
       }
     }
   </style>
@@ -218,6 +319,7 @@
 </head>
 
 <body>
+
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -234,9 +336,11 @@
   </header>
 
   <main id="main">
+
     <div class="shell">
 
       <section class="page-hero">
+
         <p class="kicker">Profiles</p>
 
         <h1>One identity, many public records.</h1>
@@ -246,258 +350,463 @@
           professional, academic, bibliographic, social, creative, and author platforms.
         </p>
 
-        <div class="notice">
-          The site uses one canonical Person identity and consistent profile links to help
-          search systems distinguish Chowdhury Muhtadee Maheer from similarly named individuals.
-          This is an identity signal, not a guarantee of a Knowledge Panel.
-        </div>
       </section>
 
       <section class="section">
+
         <div class="profile-grid">
+
+          <!-- ORCID -->
 
           <a class="profile-link reveal"
              href="https://orcid.org/0009-0004-6158-2611"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>ORCID</strong><br>
-              <small class="muted">Research identifier</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <rect x="8" y="9" width="2" height="7"></rect>
+                  <circle cx="9" cy="6.7" r="1"></circle>
+                  <path d="M13 9h2.2c2 0 3.3 1.3 3.3 3.5S17.2 16 15.2 16H13V9Zm2 1.7v3.6h.2c.8 0 1.3-.6 1.3-1.8s-.5-1.8-1.3-1.8H15Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>ORCID</strong>
+                <small class="muted">Research identifier</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- GOOGLE SCHOLAR -->
 
           <a class="profile-link reveal"
              href="https://scholar.google.com/citations?user=SrY3TlcAAAAJ&amp;hl=en"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Google Scholar</strong><br>
-              <small class="muted">Academic publications and citations</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 3 10 5-10 5L2 8l10-5Zm-6.2 8.3v4.1c0 1.9 3.1 3.6 6.2 3.6s6.2-1.7 6.2-3.6v-4.1L12 14.4l-6.2-3.1Zm13.8-.7v4.8l1.6.8V9.8l-1.6.8Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Google Scholar</strong>
+                <small class="muted">Academic publications and citations</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- WEB OF SCIENCE -->
 
           <a class="profile-link reveal"
              href="https://www.webofscience.com/wos/author/record/PCT-4492-2025"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Web of Science</strong><br>
-              <small class="muted">Researcher record</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 20 7.5v9L12 21l-8-4.5v-9L12 3Zm0 2.1L6 8.5v6.9l6 3.4 6-3.4V8.5l-6-3.4Zm0 3.1 3.8 2.2v4.3L12 17l-3.8-2.3v-4.3L12 8.2Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Web of Science</strong>
+                <small class="muted">Researcher record</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- LINKEDIN -->
 
           <a class="profile-link reveal"
              href="https://www.linkedin.com/in/chowdhury-muhtadee-maheer/"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>LinkedIn</strong><br>
-              <small class="muted">Professional profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.5 8.1H3V21h3.5V8.1ZM4.75 3a2.05 2.05 0 1 0 0 4.1A2.05 2.05 0 0 0 4.75 3ZM21 13.6c0-3.88-2.07-5.7-4.84-5.7-2.23 0-3.23 1.23-3.79 2.09V8.1H8.87V21h3.5v-6.39c0-1.68.32-3.31 2.4-3.31 2.05 0 2.08 1.93 2.08 3.42V21H21v-7.4Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>LinkedIn</strong>
+                <small class="muted">Professional profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- WIKIDATA -->
 
           <a class="profile-link reveal"
              href="https://www.wikidata.org/wiki/Q136108937"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Wikidata</strong><br>
-              <small class="muted">Open knowledge entity</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 5.5 12 2l8 3.5v9L12 22l-8-7.5v-9Zm8-1.2L6.5 7l5.5 2.7L17.5 7 12 4.3Zm-6 4.8v4.1l5 4.6v-5.2L6 9.1Zm7 8.7 5-4.6V9.1l-5 3.5v5.2Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Wikidata</strong>
+                <small class="muted">Open knowledge entity</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- ACADEMIA -->
 
           <a class="profile-link reveal"
              href="https://independent.academia.edu/ChowdhuryMuhtadeeMaheer"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Academia.edu</strong><br>
-              <small class="muted">Academic profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m12 4 8 4-8 4-8-4 8-4Zm-5.5 6.8v3.7c0 1.8 2.5 3.8 5.5 3.8s5.5-2 5.5-3.8v-3.7L12 13.6l-5.5-2.8Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Academia.edu</strong>
+                <small class="muted">Academic profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- X -->
 
           <a class="profile-link reveal"
              href="https://x.com/MuhtadeeMaheer"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>X</strong><br>
-              <small class="muted">Public social profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 4h3.9l4 5.3L17.2 4H20l-5.7 6.6L21 20h-3.9l-4.5-5.9L7.3 20H4.5l6.1-7.1L5 4Zm3.8 2 8.3 12h1.1L9.9 6H8.8Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>X</strong>
+                <small class="muted">Public social profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- THREADS -->
 
           <a class="profile-link reveal"
              href="https://www.threads.com/@muhtadee_maheer"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Threads</strong><br>
-              <small class="muted">Public social profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.2 4c4.1 0 7.2 2.2 7.2 6.2v.3h-2c-.2-2.9-2.1-4.5-5.3-4.5-3.3 0-5.5 1.8-5.5 5 0 3.4 2.3 5.1 5.4 5.1 2.5 0 4.1-1.1 4.1-2.9 0-1.5-1.1-2.3-3-2.3-1.4 0-2.4.5-3 1.6l-1.7-.9c.8-1.8 2.6-2.7 4.8-2.7 3 0 4.9 1.5 4.9 4.2 0 2.9-2.2 4.8-6.1 4.8-4.3 0-7.5-2.4-7.5-6.9C4.5 6.8 7.6 4 12.2 4Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Threads</strong>
+                <small class="muted">Public social profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- INSTAGRAM -->
 
           <a class="profile-link reveal"
              href="https://www.instagram.com/muhtadee_maheer/"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Instagram</strong><br>
-              <small class="muted">Public visual profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                  <circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                  <circle cx="17.2" cy="6.8" r="1.1"></circle>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Instagram</strong>
+                <small class="muted">Public visual profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- FACEBOOK -->
 
           <a class="profile-link reveal"
              href="https://www.facebook.com/muhtadee.maheer"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Facebook</strong><br>
-              <small class="muted">Public social profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 21v-7h2.4l.4-2.8H14V9.4c0-.8.2-1.4 1.5-1.4h1.6V5.5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2H8.7V14h2.5v7H14Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Facebook</strong>
+                <small class="muted">Public social profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- MEDIUM -->
 
           <a class="profile-link reveal"
              href="https://medium.com/@muhtadeemaheer0"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Medium</strong><br>
-              <small class="muted">Writing</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 7.3h3.1l4 5.1 3.8-5.1H20v9.4h-2.2v-7l-5.6 7-5.8-7v7H4V7.3Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Medium</strong>
+                <small class="muted">Writing</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- BEHANCE -->
 
           <a class="profile-link reveal"
              href="https://www.behance.net/muhtadeemaheer"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Behance</strong><br>
-              <small class="muted">Creative work</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h5.5c2.8 0 4.3 1.3 4.3 3.2 0 1.2-.6 2.1-1.7 2.7 1.5.5 2.3 1.6 2.3 3 0 2.3-1.8 3.7-4.8 3.7H4V6Zm2.2 1.8v3.3h3c1.5 0 2.2-.6 2.2-1.7 0-1-.7-1.6-2.2-1.6h-3Zm0 5v3.8h3.3c1.7 0 2.5-.7 2.5-1.9s-.8-1.9-2.5-1.9H6.2ZM15.4 9.5h4.4V8.2h-4.4v1.3Zm2.3 1.5c1.9 0 3.2 1.5 3.2 3.7v.7h-5.3c.2 1.3 1 2 2.2 2 .8 0 1.5-.3 2.1-.9l.8 1.1c-.8.8-1.8 1.2-3.1 1.2-2.5 0-4.1-1.5-4.1-4 0-2.2 1.5-3.8 4.2-3.8Zm0 1.5c-1 0-1.8.7-2 1.8h3.5c-.1-1-.6-1.8-1.5-1.8Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Behance</strong>
+                <small class="muted">Creative work</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- BLUESKY -->
 
           <a class="profile-link reveal"
              href="https://bsky.app/profile/muhtadeemaheer.bsky.social"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Bluesky</strong><br>
-              <small class="muted">Public social profile</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 10.2c1.4-2.1 3.4-4.8 5.8-6.1C19.5 3.2 21 4 21 5.8c0 2.4-1.4 4.4-2.8 6.1-.5.6-.4 1 .1 1.4 1.2 1 2.2 2.3 2.2 4.2 0 1.8-1.5 2.6-3.2 2-2-.7-3.8-2.5-5.3-4.5-1.5 2-3.3 3.8-5.3 4.5C5 20.1 3.5 19.3 3.5 17.5c0-1.9 1-3.2 2.2-4.2.5-.4.6-.8.1-1.4C4.4 10.2 3 8.2 3 5.8 3 4 4.5 3.2 6.2 4.1 8.6 5.4 10.6 8.1 12 10.2Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Bluesky</strong>
+                <small class="muted">Public social profile</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- AMAZON AUTHOR -->
 
           <a class="profile-link reveal"
              href="https://www.amazon.com/author/chowdhurymuhtadeemaheer"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Amazon Author</strong><br>
-              <small class="muted">Author page</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 5h10.5A3.5 3.5 0 0 1 19 8.5v7A3.5 3.5 0 0 1 15.5 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v9h10.5A1.5 1.5 0 0 0 17 14.5v-6A1.5 1.5 0 0 0 15.5 7H5Zm3 2h2v5H8V9Zm3.8 0h2c1.5 0 2.5.9 2.5 2.4 0 1.5-1 2.4-2.5 2.4h-2V9Zm2 1.5v1.8h.3c.6 0 .9-.3.9-.9s-.3-.9-.9-.9h-.3Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Amazon Author</strong>
+                <small class="muted">Author page</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- GOODREADS -->
 
           <a class="profile-link reveal"
              href="https://www.goodreads.com/book/show/251109142-the-blueprint-of-life"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Goodreads</strong><br>
-              <small class="muted">Book record</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 4h7c3 0 5 1.7 5 4.6 0 1.7-.8 3-2.2 3.7 1.6.7 2.5 2 2.5 3.8 0 3-2.2 4.9-5.6 4.9H7V4Zm2.2 1.9v5.5h4.4c2 0 3.1-1 3.1-2.7 0-1.8-1.1-2.8-3.1-2.8H9.2Zm0 7.4V19h4.5c2.1 0 3.3-1 3.3-2.9 0-1.8-1.2-2.8-3.3-2.8H9.2Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Goodreads</strong>
+                <small class="muted">Book record</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
+
+
+          <!-- OPEN LIBRARY -->
 
           <a class="profile-link reveal"
              href="https://openlibrary.org/works/OL45374644W/The_Blueprint_of_Life?edition=key%3A/books/OL61836754M"
              target="_blank"
              rel="me noopener">
-            <span>
-              <strong>Open Library</strong><br>
-              <small class="muted">Book record</small>
+
+            <span class="profile-link-content">
+
+              <span class="profile-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 4h5.5c1.7 0 3 .5 4 1.5 1-1 2.3-1.5 4-1.5H19v15h-.5c-1.7 0-3.2.4-4.5 1.2-1.3-.8-2.8-1.2-4.5-1.2H5V4Zm2 2v10.9c.8-.2 1.7-.3 2.5-.3 1 0 1.9.2 2.8.6V7c-.7-.7-1.6-1-2.8-1H7Zm10 0h-.5c-1.2 0-2.1.3-2.8 1v10.2c.9-.4 1.8-.6 2.8-.6.8 0 1.7.1 2.5.3V6Z"></path>
+                </svg>
+              </span>
+
+              <span class="profile-copy">
+                <strong>Open Library</strong>
+                <small class="muted">Book record</small>
+              </span>
+
             </span>
-            <span>↗</span>
+
+            <span class="profile-arrow">↗</span>
+
           </a>
 
         </div>
-      </section>
 
-      <section class="section">
-        <div class="section-head">
-
-          <div>
-            <p class="eyebrow">Public record</p>
-            <h2>Useful links, not just social links.</h2>
-          </div>
-
-          <p>
-            Academic identifiers, publication pages, book records, and professional profiles
-            are grouped together so a visitor can verify work from primary sources.
-          </p>
-
-        </div>
-
-        <div class="grid-2">
-
-          <article class="card">
-            <span class="small">Research identity</span>
-            <h3>ORCID + Scholar + Web of Science</h3>
-            <p>
-              These are the core research-facing identifiers in the site's Person schema
-              and profile trail.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="small">Open knowledge</span>
-            <h3>Wikidata</h3>
-            <p>
-              The site links the person to the supplied Wikidata item so the public site
-              and open-knowledge record can reinforce one another.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="small">Author identity</span>
-            <h3>Amazon + Goodreads + Open Library</h3>
-            <p>
-              Bibliographic links connect the website to The Blueprint of Life and its author record.
-            </p>
-          </article>
-
-          <article class="card">
-            <span class="small">Professional identity</span>
-            <h3>LinkedIn</h3>
-            <p>
-              The primary professional profile used throughout the website as a consistent
-              external identity signal.
-            </p>
-          </article>
-
-        </div>
       </section>
 
     </div>
+
   </main>
+
 
   <footer class="site-footer">
 
     <div class="shell footer-grid">
 
       <div class="footer-intro">
+
         <p class="footer-kicker">Chowdhury Muhtadee Maheer</p>
 
         <h2>
@@ -508,18 +817,24 @@
           Student researcher, science educator, author, and founder working across public health,
           biological science, environmental activism, and science communication.
         </p>
+
       </div>
 
+
       <div>
+
         <p class="footer-label">Explore</p>
 
         <a href="research.html">Research</a>
         <a href="initiatives.html">Activism &amp; The Leaf Project</a>
         <a href="book.html">The Blueprint of Life</a>
         <a href="honors.html">Honors &amp; recognition</a>
+
       </div>
 
+
       <div>
+
         <p class="footer-label">Connect</p>
 
         <div class="social-row">
@@ -537,6 +852,7 @@
 
           </a>
 
+
           <a class="icon-link"
              href="mailto:muhtadeemaheer0@gmail.com"
              aria-label="Email"
@@ -547,6 +863,7 @@
             </svg>
 
           </a>
+
 
           <a class="icon-link"
              href="https://scholar.google.com/citations?user=SrY3TlcAAAAJ&amp;hl=en"
@@ -572,12 +889,16 @@
 
     </div>
 
+
     <div class="shell footer-bottom">
+
       <span>&copy; 2026 Chowdhury Muhtadee Maheer</span>
       <span>Official personal website</span>
+
     </div>
 
   </footer>
+
 
   <script src="script.js"></script>
 
